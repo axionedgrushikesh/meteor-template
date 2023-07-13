@@ -273,16 +273,14 @@ li {
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 8px;
+  height: 20px;
   position: relative;
-  color: #D8DAE2;
   display: inline-block;
   text-indent: -9999px;
 }
 
 .icon::before {
-  color: #D8DAE2;
   position: absolute;
   top: 0;
   left: 0;
@@ -350,7 +348,7 @@ li {
 =================================*/
 
 .banner-section {
-  height: 69vh;
+  height: 68vh;
   display: flex;
   align-items: center;
 }
@@ -359,7 +357,7 @@ li {
   width: 100%;
   position: absolute;
   top: 0;
-  height: 77%;
+  height: 78%;
   left: 0;
   z-index: -1;
 }
@@ -445,7 +443,8 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 25px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-details li:not(:last-child) {
@@ -455,11 +454,46 @@ li {
 .card h3 {
   text-align: center;
   font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .card p {
+  color: #5E717A;
   font-size: 10px;
+  line-height: 17px;
   text-align: center;
+}
+
+.pen-icon,
+.bulb-icon,
+.money-icon,
+.sound-icon {
+  margin-bottom: 10px;
+}
+
+.pen-icon::before {
+  content: "\e5ca";
+  color: #A2CE91;
+  font-size: 18px;
+}
+
+.bulb-icon::before {
+  content: "\f0eb";
+  font-size: 18px;
+  color: #A2CE91;
+}
+
+.money-icon::before {
+  content: "\e605";
+  color: #A2CE91;
+  font-size: 18px;
+}
+
+.sound-icon::before {
+  content: "\f0a1";
+  color: #A2CE91;
+  font-size: 18px;
 }
 
 /*=================================
