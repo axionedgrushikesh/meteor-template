@@ -27,7 +27,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
@@ -40,7 +40,7 @@
     <header>
       <div class="header-container">
         <div class="wrapper">
-          <a href="index.html" title="Meteor">
+          <a href="index.html" title="Meteor" class="logo">
             <img src="assets/img/white_logo.png" alt="Meteor logo">
           </a>
           <nav>
@@ -59,6 +59,9 @@
               </li>
               <li>
                 <a href="#FIXME" title="Contacts Us">Contacts Us</a>
+              </li>
+              <li class="icon hamberger-icon">
+                hamberger
               </li>
             </ul>
           </nav>
@@ -134,27 +137,32 @@
 
         <div class="aboutus-bottom">
           <div class="wrapper">
-            <div class="offers">
-              <h4>New offers just arrived, Get it now and take profit.</h4>
-              <p>
-                Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut.
-                Raw denim chicharrones semiotics af truffaut pinterest.
-                Distillery letterpress authentic adaptogen.
-                Meditation schlitz humblebrag photo booth celiac cliche chartreuse.
-              </p>
-              <p>
-                Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics.
-                Intelligentsia literally meggings trust fund put a bird on it.
-                Shoreditch crucifix artisan pug shaman twee. Health goth bicycle rights retro iPhone.
-              </p>
-              <div class="btn-container">
-                <a href="#FIXME">DISCOVER MORE</a>
-                <a href="#FIXME">PURCHASE NOW</a>
-              </div>
-            </div>
-            <figure>
-              <img src="assets/img/what-we-do-right-image.png" alt="Food Image">
+            <figure class="aboutus-bg">
+              <img src="assets/img/what-we-do-bg.png" alt="what we do img">
             </figure>
+            <div class="offers">
+              <div class="offer-dis">
+                <h4>New offers just arrived, Get it now and take profit.</h4>
+                <p>
+                  Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut.
+                  Raw denim chicharrones semiotics af truffaut pinterest.
+                  Distillery letterpress authentic adaptogen.
+                  Meditation schlitz humblebrag photo booth celiac cliche chartreuse.
+                </p>
+                <p>
+                  Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics.
+                  Intelligentsia literally meggings trust fund put a bird on it.
+                  Shoreditch crucifix artisan pug shaman twee. Health goth bicycle rights retro iPhone.
+                </p>
+                <div class="btn-container">
+                  <a href="#FIXME" class="discover-btn">DISCOVER MORE</a>
+                  <a href="#FIXME" class="purchase-btn">PURCHASE NOW</a>
+                </div>
+              </div>
+              <figure class="food-img">
+                <img src="assets/img/what-we-do-right-image.png" alt="Food Image">
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -163,57 +171,56 @@
       <!-- portfolio section starts here -->
       <section class="portfolio-section">
         <div class="wrapper">
-          <h2>OUR PORTFOLIO</h2>
+          <h2 class="sectiob-heading">OUR PORTFOLIO</h2>
+          <div class="h-line"></div>
           <ul class="portfolio-category-list">
-            <li class="active-category">
-              All
-              <ul>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_01.jpg" alt="Workspace img1">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_02.jpg" alt="Technology img1">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_03.jpg" alt="Technology img2">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_04.jpg" alt="City img1">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_05.jpg" alt="Nature img1">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_06.jpg" alt="Technology img2">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_07.jpg" alt="Workspace img2">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/img/portfolio_08.jpg" alt="Workspace img3">
-                  </figure>
-                </li>
-              </ul>
-            </li>
+            <li class="active-category">All</li>
             <li>Nature</li>
             <li>Workspace</li>
             <li>City</li>
             <li>Technology</li>
+          </ul>
+          <ul class="portfolio-images">
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_01.jpg" alt="Workspace img1" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_02.jpg" alt="Technology img1" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_03.jpg" alt="Technology img2" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_04.jpg" alt="City img1" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_05.jpg" alt="Nature img1" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_06.jpg" alt="Technology img2" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_07.jpg" alt="Workspace img2" class="portfolio-img">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/img/portfolio_08.jpg" alt="Workspace img3" class="portfolio-img">
+              </figure>
+            </li>
           </ul>
         </div>
       </section>
@@ -223,7 +230,11 @@
       <section class="blog-section">
         <div class="blog-section-top">
           <div class="wrapper">
-            <h2>OUR BLOG POSTS</h2>
+            <figure class="blog-background-img">
+              <img src="assets/img/blog-bg.png" alt="blog background img">
+            </figure>
+            <h2 class="sectiob-heading">OUR BLOG POSTS</h2>
+            <div class="white-line"></div>
             <div class="blogs">
               <div class="food-blog">
                 <figure>
@@ -267,19 +278,19 @@
         <div class="blog-section-bottom">
           <div class="wrapper">
             <ul class="blog-details-list">
-              <li>
+              <li class="blog-card">
                 <span>926</span>
                 REGULAR VISITORS
               </li>
-              <li>
+              <li class="blog-card">
                 <span>214</span>
                 FINISHED PROJECTS
               </li>
-              <li>
+              <li class="blog-card">
                 <span>118</span>
                 HAPPY CLIENTS
               </li>
-              <li>
+              <li class="blog-card">
                 <span>16</span>
                 TOTAL AWARDS
               </li>
@@ -295,22 +306,28 @@
     <footer>
       <div class="footer-top">
         <div class="wrapper">
-          <h3>CONTACT US</h3>
+          <figure class="footer-bg-image">
+            <img src="assets/img/contact-bg.png" alt="Contact background img">
+          </figure>
+          <h2 class="sectiob-heading">CONTACT US</h2>
+          <div class="white-line"></div>
           <div class="contact-us">
             <figure>
               <img src="assets/img/map.jpg" alt="Map img">
             </figure>
             <form class="contact-form">
-              <div class="input-grp">
-                <input type="text" placeholder="Your name..." name="name" />
+              <div class="name-email-inputs">
+                <div class="input-grp">
+                  <input type="text" placeholder="Your name..." name="name" class="input"/>
+                </div>
+                <div class="input-grp">
+                  <input type="email" placeholder="Your email..." name="email" />
+                </div>
               </div>
               <div class="input-grp">
-                <input type="email" placeholder="Your email..." name="email" />
+                <textarea id="message" name="message" rows="8" cols="30" placeholder="Your message..."></textarea>
               </div>
-              <div class="input-grp">
-                <textarea id="message" name="message" rows="4" cols="30" placeholder="Your message..."></textarea>
-              </div>
-              <input type="submit" value="Send message" />
+              <input type="submit" value="Send message" class="submit-btn"/>
             </form>
           </div>
         </div>
@@ -319,22 +336,22 @@
       <div class="footer-bottom">
         <div class="wrapper">
           <p>
-            Copyright &copy; 2017 Company Name - Design: <a href="#FIXME" title="Tooplate">Tooplate</a>
+            Copyright &copy; 2017 Company Name - Design: <a href="#FIXME" title="Tooplate" class="toolplate">Tooplate</a>
           </p>
           <ul class="social-media-icons">
-            <li>
+            <li class="icon-bg">
               <a href="#FIXME" target="_blank" title="facebook" class="icon facebook">facebook</a>
             </li>
-            <li>
+            <li class="icon-bg">
               <a href="#FIXME" target="_blank" title="twitter" class="icon twitter">twitter</a>
             </li>
-            <li>
+            <li class="icon-bg">
               <a href="#FIXME" target="_blank" title="linked-in" class="icon linked-in">linked in</a>
             </li>
-            <li>
+            <li class="icon-bg">
               <a href="#FIXME" target="_blank" title="RFI" class="icon rfi">rfi</a>
             </li>
-            <li>
+            <li class="icon-bg">
               <a href="#FIXME" target="_blank" title="web" class="icon web">web</a>
             </li>
           </ul>
