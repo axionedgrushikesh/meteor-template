@@ -265,6 +265,7 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 li {
@@ -413,6 +414,20 @@ li {
   text-transform: uppercase;
 }
 
+.hamberger-icon::before {
+  content: "\f0c9";
+  color: #fff;
+}
+
+.hamberger-icon {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 /*=================================
   banner styling ends here
 =================================*/
@@ -421,10 +436,10 @@ li {
   about us styling satrts here
 =================================*/
 
-.aboutus-top { 
+.aboutus-top {
   background-color: #F4F4F4;
   padding: 60px 0;
- }
+}
 
 .aboutus-top .wrapper {
   display: flex;
@@ -435,17 +450,18 @@ li {
 
 .card-details {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
+  flex-basis: 23%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-details li:not(:last-child) {
@@ -486,7 +502,7 @@ li {
 }
 
 .money-icon::before {
-  content: "\e605";
+  content: "\f53b";
   color: #A2CE91;
   font-size: 20px;
 }
@@ -512,7 +528,7 @@ li {
   z-index: -1;
 }
 
-.aboutus-bg img{
+.aboutus-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -526,6 +542,7 @@ li {
 
 .offer-dis {
   flex-basis: 55%;
+  margin-bottom: 70px;
 }
 
 .offer-dis h4 {
@@ -560,6 +577,7 @@ li {
   background-color: #fff;
   padding: 10px 13px;
   border-radius: 30px;
+  margin-right: 10px;
 }
 
 .purchase-btn {
@@ -580,24 +598,32 @@ li {
   portfolio styling starts here
 =================================*/
 
-.portfolio-section { padding: 60px 0; }
+.portfolio-section {
+  padding: 60px 0;
+}
 
-.portfolio-section .wrapper{
+.portfolio-section .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.portfolio-category-list .active-category { color: #A2CE91; }
+.portfolio-category-list .active-category a {
+  color: #A2CE91;
+}
 
-.portfolio-category-list { margin-bottom: 40px; }
+.portfolio-category-list {
+  margin-bottom: 40px;
+}
 
-.portfolio-category-list li {
+.portfolio-category-list li a {
   font-size: 12px;
   color: #908976;
 }
 
-.portfolio-category-list li:not(:last-child) { margin-left: 10px; }
+.portfolio-category-list li:not(:last-child) {
+  margin-right: 10px;
+}
 
 .portfolio-images {
   display: flex;
@@ -627,7 +653,7 @@ li {
 
 .blog-section-top {
   position: relative;
-  min-height: 563px;
+  min-height: 535px;
 }
 
 .blog-section-top .wrapper {
@@ -644,7 +670,7 @@ li {
   height: 100%;
 }
 
-.blog-background-img img{
+.blog-background-img img {
   width: 100%;
   height: 100%;
 }
@@ -722,10 +748,15 @@ li {
 
 .blog-details-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-details-list li:not(:last-child) {
+  margin-right: 20px;
 }
 
 .blog-card {
+  flex-basis: 23%;
   background-color: #F4F4F4;
   color: #908976;
   padding: 30px 40px;
@@ -742,6 +773,7 @@ li {
   font-weight: 700;
   margin-bottom: 12px;
 }
+
 /*=================================
   blog styling ends here
 =================================*/
@@ -781,6 +813,7 @@ li {
 
 .contact-us {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -790,45 +823,60 @@ li {
 
 .contact-us figure {
   flex-basis: 49%;
+  width: 50%;
 }
 
 .contact-form {
   flex-basis: 48%;
+  width: 50%;
 }
 
 .name-email-inputs {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 19px;
 }
 
 .input-grp input {
-  background-color: #3a3d3f;
-  opacity: .6;
-  border: none;
   width: 100%;
   height: 35px;
+  border: none;
+  font-size: 9px;
+  background-color: #3a3d3f;
+  color: #fff;
+  opacity: .6;
 }
 
-.input { margin-right: 17px; }
+.input-grp {
+  width: 100%;
+}
 
-::placeholder { color: #fff; }
+.input {
+  margin-right: 20px;
+}
+
+::placeholder {
+  color: #fff;
+}
 
 .input-grp textarea {
-  background-color: #3a3d3f;
-  opacity: .6;
-  border: none;
   width: 100%;
+  height: 110px;
+  background-color: #3a3d3f;
+  color: #fff;
+  opacity: .6;
+  font-size: 9px;
+  border: none;
 }
 
 .submit-btn {
   background-color: #A2CE91;
   color: #fff;
+  text-transform: uppercase;
   border: none;
   border-radius: 30px;
   margin-top: 19px;
-  padding: 10px;
-  font-size: 12px;
+  padding: 10px 15px;
+  font-size: 8px;
 }
 
 .footer-bottom {
@@ -868,35 +916,35 @@ li {
   color: #222025;
   content: "\f39e";
   font-size: 12px;
-  padding: 3px 6px;
+  padding: 4px 6px;
 }
 
 .twitter::before {
   color: #222025;
   content: "\f099";
   font-size: 12px;
-  padding: 3px 4px;
+  padding: 4px 4px;
 }
 
 .linked-in::before {
   color: #222025;
   content: "\f0e1";
   font-size: 12px;
-  padding: 3px 5px;
+  padding: 4px 5px;
 }
 
 .rfi::before {
   color: #222025;
   content: "\e012";
   font-size: 12px;
-  padding: 3px 3px;
+  padding: 4px 3px;
 }
 
 .web::before {
   color: #222025;
   content: "\f0ac";
   font-size: 12px;
-  padding: 3px 5px;
+  padding: 4px 4px;
 }
 
 .icon-bg {
@@ -904,6 +952,7 @@ li {
   border-radius: 50%;
   background-color: #A2CE91;
 }
+
 /*=================================
   footer styling ends here
 =================================*/
@@ -918,22 +967,501 @@ li {
     color: #A2CE91;
   }
 
+  .facebook:hover:before,
+  .twitter:hover:before,
+  .linked-in:hover:before,
+  .rfi:hover:before,
+  .web:hover:before,
+  .toolplate:hover {
+    transition: .8s;
+    color: #A2CE91;
+  }
+
   .banner-info a:hover {
+    transition: .8s;
     color: #A2CE91;
     background-color: #fff;
   }
 
   .discover-btn:hover {
+    transition: .8s;
     color: #fff;
     background-color: #A2CE91;
   }
 
-  .purchase-btn:hover {
+  .purchase-btn:hover,
+  .submit-btn:hover {
+    transition: .8s;
     color: #A2CE91;
+    background-color: #fff;
+  }
+
+  .portfolio-category-list li a:hover {
+    color: #A2CE91;
+  }
+
+  .icon-bg:hover {
+    transition: .8s;
     background-color: #fff;
   }
 }
 
 /*=================================
   media query for 995 above ends here
+=================================*/
+
+@media only screen and (max-width: 1141px) {
+  .blog-details-list li:last-child {
+    margin-top: 20px;
+  }
+}
+
+/*=================================
+  media query for 995 starts here
+=================================*/
+
+@media only screen and (max-width: 995px) {
+  .card {
+    flex-basis: 47%;
+  }
+
+  .card-details li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .card-details li:last-child {
+    margin-bottom: 20px;
+  }
+
+  .card-details li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .offer-dis {
+    margin-bottom: 70px;
+  }
+
+  .portfolio-images li {
+    flex-basis: 26%;
+  }
+
+  .portfolio-images {
+    justify-content: center;
+  }
+  
+  .blog-section-top h2 {
+    margin-top: 60px;
+  }
+
+  .blog-section-top {
+    min-height: 480px;
+  }
+
+  .blog-details {
+    padding: 7px 8px;
+  }
+  
+  .blog-details h5 {
+    font-size: 11px;
+  }
+  
+  .blog-details span {
+    font-size: 9px;
+  }
+
+  .blog-card {
+    flex-basis: 47%;
+  }
+
+  .blog-details-list {
+    justify-content: center;
+  }
+
+  .blog-details-list li:nth-child(3) {
+    margin-top: 20px;
+  }
+
+  .blog-details-list li:nth-child(2) { 
+    margin-right: 0;
+  }
+
+  .footer-top h2 {
+    margin-top: 60px;
+  }
+}
+
+/*=================================
+  media query for 995 ends here
+=================================*/
+
+
+/*=================================
+  media query for 768 starts here
+=================================*/
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 85.66%;
+  }
+
+  .header-nav-links {
+    display: none;
+  }
+
+  .hamberger-icon {
+    display: block;
+    width: 15px;
+  }
+
+  .banner-info h1 {
+    font-size: 23px;
+  }
+
+  .card {
+    /* flex-basis: 50%; */
+  }
+
+  .aboutus-top {
+    padding: 40px 0;
+  }
+
+  .h-line {
+    margin-bottom: 40px;
+  }
+
+  .card-details li:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .card-details li:last-child {
+    margin-bottom: 0;
+  }
+
+  .offers {
+    padding-top: 40px;
+  }
+
+  .offer-dis {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-section {
+    padding: 40px 0;
+  }
+
+  .portfolio-images li {
+    flex-basis: 41%;
+  }
+
+  .portfolio-images li:nth-child(n+5) {
+    margin-bottom: 22px;
+  }
+
+  .portfolio-images li:nth-child(n+7) {
+    margin-bottom: 0; 
+  }
+
+  .blog-section-top {
+    min-height: 450px;
+  }
+
+  .blogs {
+    flex-wrap: wrap;
+  }
+
+  .blog-section-top h2 {
+    margin-top: 40px;
+  }
+
+  .white-line {
+    margin-bottom: 40px;
+  }
+
+  .blog-section-bottom {
+    padding: 40px 0;
+  }
+
+  .footer-top h2 {
+    margin-top: 40px;
+  }
+
+}
+
+/*=================================
+  media query for 768 ends here
+=================================*/
+
+
+/*=================================
+  media query for 640 starts here
+=================================*/
+
+@media only screen and (max-width: 640px) {
+  .banner-info h1 {
+    font-size: 20px;
+  }
+
+  .card-details {
+    flex-direction: column;
+  }
+
+  .card-details li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card-details li:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  .offers {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .offer-dis {
+    margin-bottom: 20px;
+  }
+
+  .offer-dis h4 {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .offer-dis p {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .food-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .food-img img {
+    width: 70%;
+  }
+
+  .discover-btn,
+  .purchase-btn {
+    font-weight: 600;
+  }
+
+  .h-line,
+  .portfolio-category-list {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .portfolio-section {
+    padding: 30px 0;
+  }
+
+  .portfolio-img {
+    width: 100%;
+  }
+
+  .portfolio-images li:nth-child(7) {
+    margin-bottom: 20px; 
+  }
+
+  .portfolio-images li:nth-child(1),
+  .portfolio-images li:nth-child(3),
+  .portfolio-images li:nth-child(5),
+  .portfolio-images li:nth-child(7) {
+    margin-right: 20px;
+  }
+
+  .blogs {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .food-blog {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .other-blogs {
+    width: 70%;
+  }
+
+  .workspace-blog {
+    margin-bottom: 20px;
+  }
+
+  .blog-section-top h2 {
+    margin-top: 30px;
+  }
+
+  .white-line {
+    margin-bottom: 30px;
+  }
+
+  .blog-details-list {
+    flex-direction: column;
+  }
+
+  .blog-details-list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .blog-details-list li:first-child {
+    margin-bottom: 20px;
+  }
+
+  .blog-section-bottom {
+    padding: 30px 0;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-us figure {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .footer-top h2 {
+    margin-top: 30px;
+  }
+
+  .footer-bottom .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .social-media-icons {
+    text-align: center;
+  }
+
+}
+
+/*=================================
+  media query for 640 ends here
+=================================*/
+
+
+/*=================================
+  media query for 480 starts here
+=================================*/
+
+@media only screen and (max-width: 480px) {
+  .banner-info h1 {
+    font-size: 17px;
+  }
+
+  .portfolio-images {
+    flex-direction: column;
+  }
+
+  .portfolio-images li:nth-child(1),
+  .portfolio-images li:nth-child(3),
+  .portfolio-images li:nth-child(5),
+  .portfolio-images li:nth-child(7) {
+    margin-right: 0;
+  }
+  
+  .portfolio-img {
+    width: 80%;
+  }
+
+  .portfolio-images {
+    align-items: center;
+  }
+
+  .portfolio-images li a {
+    text-align: center;
+  }
+
+  .food-blog {
+    width: 80%;
+  }
+
+  .other-blogs {
+    width: 80%;
+  }
+
+  .contact-us figure,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/*=================================
+  media query for 480 ends here
+=================================*/
+
+/*=================================
+  media query for 375 starts here
+=================================*/
+
+@media only screen and (max-width: 375px) {
+
+  .banner-info h1 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .banner-info span {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .banner-info p {
+    width: 100%;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .banner-info a {
+    font-size: 7px;
+    margin-top: 9px;
+  }
+
+  .aboutus-top {
+    padding: 30px 0;
+  }
+
+  .h-line {
+    margin-bottom: 30px;
+  }
+
+  .discover-btn,
+  .purchase-btn {
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  .food-blog {
+    width: 100%;
+  }
+
+  .other-blogs {
+    width: 100%;
+  }
+}
+
+/*=================================
+  media query for 375 ends here
 =================================*/

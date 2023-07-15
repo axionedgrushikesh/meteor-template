@@ -43,7 +43,7 @@
           <a href="index.html" title="Meteor" class="logo">
             <img src="assets/img/white_logo.png" alt="Meteor logo">
           </a>
-          <nav>
+          <nav class="navbar">
             <ul class="header-nav-links">
               <li class="active">
                 <a href="/index.html" title="Home">Home</a>
@@ -60,10 +60,10 @@
               <li>
                 <a href="#FIXME" title="Contacts Us">Contacts Us</a>
               </li>
-              <li class="icon hamberger-icon">
-                hamberger
-              </li>
             </ul>
+            <div class="icon hamberger-icon">
+              hamberger
+            </div>
           </nav>
         </div>
       </div>
@@ -174,51 +174,76 @@
           <h2 class="sectiob-heading">OUR PORTFOLIO</h2>
           <div class="h-line"></div>
           <ul class="portfolio-category-list">
-            <li class="active-category">All</li>
-            <li>Nature</li>
-            <li>Workspace</li>
-            <li>City</li>
-            <li>Technology</li>
+            <li class="active-category">
+              <a href="#FIXME" title="All">All</a></li>
+            <li>
+              <a href="#FIXME" title="Nature">Nature</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Workspace">Workspace</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="City">City</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Technology">Technology</a>
+            </li>
           </ul>
           <ul class="portfolio-images">
             <li>
               <figure>
-                <img src="assets/img/portfolio_01.jpg" alt="Workspace img1" class="portfolio-img">
+                <a href="#FIXME" title="Workspace">
+                  <img src="assets/img/portfolio_01.jpg" alt="Workspace img1" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_02.jpg" alt="Technology img1" class="portfolio-img">
+                <a href="#FIXME" title="Technology">
+                  <img src="assets/img/portfolio_02.jpg" alt="Technology img1" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_03.jpg" alt="Technology img2" class="portfolio-img">
+                <a href="#FIXME" title="Technology">
+                  <img src="assets/img/portfolio_03.jpg" alt="Technology img2" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_04.jpg" alt="City img1" class="portfolio-img">
+                <a href="#FIXME" title="City">
+                  <img src="assets/img/portfolio_04.jpg" alt="City img1" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_05.jpg" alt="Nature img1" class="portfolio-img">
+                <a href="#FIXME" title="Nature">
+                  <img src="assets/img/portfolio_05.jpg" alt="Nature img1" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_06.jpg" alt="Technology img2" class="portfolio-img">
+                <a href="#FIXME" title="Technology">
+                  <img src="assets/img/portfolio_06.jpg" alt="Technology img2" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_07.jpg" alt="Workspace img2" class="portfolio-img">
+                <a href="#FIXME" title="Workspace">
+                  <img src="assets/img/portfolio_07.jpg" alt="Workspace img2" class="portfolio-img">
+                </a>
               </figure>
             </li>
             <li>
               <figure>
-                <img src="assets/img/portfolio_08.jpg" alt="Workspace img3" class="portfolio-img">
+                <a href="#FIXME" title="Workspace">
+                  <img src="assets/img/portfolio_08.jpg" alt="Workspace img3" class="portfolio-img">
+                </a>
               </figure>
             </li>
           </ul>
@@ -313,19 +338,21 @@
           <div class="white-line"></div>
           <div class="contact-us">
             <figure>
-              <img src="assets/img/map.jpg" alt="Map img">
+              <a href="#FIXME" title="Map">
+                <img src="assets/img/map.jpg" alt="Map img">
+              </a>
             </figure>
             <form class="contact-form">
               <div class="name-email-inputs">
-                <div class="input-grp">
-                  <input type="text" placeholder="Your name..." name="name" class="input"/>
+                <div class="input-grp input">
+                  <input type="text" placeholder="Your name..." name="name"/>
                 </div>
                 <div class="input-grp">
                   <input type="email" placeholder="Your email..." name="email" />
                 </div>
               </div>
               <div class="input-grp">
-                <textarea id="message" name="message" rows="8" cols="30" placeholder="Your message..."></textarea>
+                <textarea id="message" name="message" rows="10" cols="70" placeholder="Your message..."></textarea>
               </div>
               <input type="submit" value="Send message" class="submit-btn"/>
             </form>
