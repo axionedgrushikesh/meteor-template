@@ -948,7 +948,10 @@ li {
 =================================*/
 
 @media only screen and (max-width: 1141px) {
+  
   .blog-details-list li:last-child { margin-top: 20px; }
+  .card-details li:not(:last-child) { margin-bottom: 20px;}
+
 }
 
 /*=================================
@@ -988,6 +991,7 @@ li {
   .blog-details-list li:nth-child(2) { margin-right: 0; }
 
   .footer-top h2 { margin-top: 60px; }
+  
 }
 
 /*=================================
